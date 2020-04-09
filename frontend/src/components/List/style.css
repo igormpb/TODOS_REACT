@@ -1,0 +1,64 @@
+.list-group ul {
+    margin:0px 50px;
+    border-radius: 5px 0px 5px 0px;
+    
+}
+
+.list-group li{
+    list-style: none;
+}
+
+ .todos{
+    margin-bottom: 5px;
+    box-shadow: 2px 2px 4px grey;
+}
+
+button{
+    border: none;
+    border-radius: 3px 0px 3px 0px;
+    display: inline-flex;
+    margin-left: 4px;
+    justify-content: space-around;
+    padding: 8px;
+    
+}
+
+.btn-trash{
+    background-color: rgb(199, 14, 14);
+    transition: all 0.3s;
+}
+.btn-trash:hover{
+    opacity: 0.7;
+}
+
+.btn-check{
+    background-color: rgba(14, 199, 14, 0.486);
+    transition: all 0.3s;
+}
+.btn-check:hover{
+    opacity: 0.7;
+}
+.finish{
+    transition: all 0.3s;
+    background-color: rgba(149, 202, 149, 0.548);
+}
+
+.pedding{ 
+    transition: all 0.3s;
+    background-color: rgba(236, 175, 33, 0.397);
+
+}
+
+.option{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.btn-optn:hover{
+    outline-style: none;
+    cursor: initial;
+    box-shadow: 2px 2px 4px gray;
+}
+.btn-optn:focus{
+    outline: 0px none;
+}

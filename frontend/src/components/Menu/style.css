@@ -1,0 +1,14 @@
+.nav{
+    display: inline-flex;
+    width: 100%;
+    justify-items: center;
+}
+.menu-link{
+    color:grey;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+.menu-link:hover{
+    color: hotpink;
+}
