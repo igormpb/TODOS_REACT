@@ -5,26 +5,30 @@ import './style.css';
 
 
 function Form() {
-    const [description = '', setDescription] = useState('');
+    const [description, setDescription] = useState('');
 
-
-   async function HandleAdd(e){
+    
+    async function HandleAdd(e){
         e.preventDefault();
         try{
-            await api.post('/todos',{description})
+            await api.post('/todos',{description}
+            )
+            setDescription('');
             
             
         }catch(err){
             alert('tente preecher o campo')
         }
     }
+
+    
     return (
 
         <div className="container">
             <div className="input-group mb-3">
-                <input type="text" className="form-control" value={description} onChange={e => setDescription(e.target.value)} placeholder="add a task..." />
+                <input id="description" type="text" className="form-control" value={description} onChange={e => setDescription(e.target.value)} placeholder="add a task..." />
                 <div className="input-group-append">
-                    <button className="btn btn-secondary" onClick={HandleAdd}  type="button"><IoIosAddCircle /></button>
+                    <button className="btn btn-secondary" onClick={HandleAdd} value="submit" type="button"><IoIosAddCircle /></button>
                 </div>
               
             </div>
